@@ -17,7 +17,7 @@ With wksSheet
     For lngCell = 1 To lngCellMax
     strString = .Cells(lngCell, 1).Value
     If Not IsNumeric(Application.Match(strString, varArray, 0)) Then ' No duplicates
-        varArray(intCounter) = strString
+        varArray(lngCounter) = strString
         lngCounter = lngCounter + 1
         ReDim Preserve varArray(lngCounter)
     End If

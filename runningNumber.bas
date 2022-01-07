@@ -1,9 +1,10 @@
 Option Explicit
 
-' Purpose:  1.) Add leading zeroes to a number create a five digit number. 
+' Purpose:  1.) Add leading zeroes to a number in order to create a five digit number. 
 '           2.) Create an output file for each term with numbers from lower
 '               to upper boundary.
-' An output folder has to be created in the same directory level as the worksheet.
+
+' Please create a folder "Output" for the output in the same directory level in which the worksheet is located.
 
 ' Examples: 1 -> 00001, 10 -> 00010, 100 -> 00100, etc.
 

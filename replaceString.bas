@@ -6,9 +6,9 @@ Dim lngRow, lngRowMax, lngColumn, lngColumnMax As Long
 Dim intColumnTerm As Integer
 Dim strKeyword As String
 
-With Tabelle1
+With Sheet1
   
-   ' Find keyword in the relevant column
+  ' Find keyword in the relevant column
   lngColumnMax = .UsedRange.Columns.Count
   For lngColumn = 1 To lngColumnMax
     strKeyword = .Cells(1, lngColumn).Value

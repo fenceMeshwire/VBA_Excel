@@ -5,10 +5,12 @@ Sub FindStringRegEx()
 Dim lngRow, lngRowMax As Long
 Dim lngColToSearch As Long
 Dim strContent As String
+Dim wksSheet as Worksheet
 
+Set wksSheet = Sheet1
 lngColToSearch = 1
 
-With tbl_table
+With Sheet1
 
   lngRowMax = .Cells(.Rows.Count, lngColToSearch).End(xlUp).Row
   For lngRow = lngRowMax To 2 Step -1

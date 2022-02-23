@@ -18,7 +18,6 @@ With Sheet1
     If isRegEx(strContent) = False Then
       .Rows(lngRow).Delete
     End If
-    
   Next lngRow
   
 End With

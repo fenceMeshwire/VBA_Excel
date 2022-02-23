@@ -31,7 +31,7 @@ With Sheet1
     Exit Sub
   End If
   
-  ' Delete columns not including strSearchTerm value.
+  ' Delete columns which are not including any value.
   For lngColumn = lngColumnMax To 1 Step -1
     If .Cells(lngRowSearchTerm, lngColumn) = "" Then
       .Columns(lngColumn).Delete

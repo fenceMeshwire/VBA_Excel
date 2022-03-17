@@ -21,7 +21,7 @@ With Sheet1
   lngRowMax = .UsedRange.Rows.Count
   For lngRow = 2 To lngRowMax
     strKeyword = .Cells(lngRow, intColumnTerm).Value
-    strKeyword = Replace(strTerm, "_", " ")
+    strKeyword = Replace(strKeyword, "_", " ")
     .Cells(lngRow, intColumnTerm).Value = strKeyword
   Next lngRow
   

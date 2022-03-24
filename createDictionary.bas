@@ -3,7 +3,7 @@ Option Explicit
 Sub createDictionary()
 
 Dim dictDictionary As Object
-Dim lngCellFree As Long
+Dim lngCellFree as Long
 Dim objKeysDictionary, objValuesDictionary
 Dim wsf As WorksheetFunction
 Dim wksSheet As Worksheet
@@ -24,11 +24,11 @@ objValuesDictionary = dictDictionary.items
 
 ' Visualize the output with the "Transpose" function
 With wksSheet
-  lngCellFree = .Cells(.Rows.Count, 1).End(xlUp).Row + 1
+  lngCellFree = 2 + Ubound(objKeysDictionary)
   .Range("A1").Value = "Keys"
   .Range("B1").Value = "Values"
-  .Range("A2:A" & lngCellFree).Value = wsf.Transpose(dictDictionary.keys)
-  .Range("B2:B" & lngCellFree).Value = wsf.Transpose(dictDictionary.items)
+  .Range("A2:A" & lngCellFree = wsf.Transpose(dictDictionary.keys)
+  .Range("B2:B" & lngCellFree = wsf.Transpose(dictDictionary.items)
 End With
 
 End Sub

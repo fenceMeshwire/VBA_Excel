@@ -27,8 +27,8 @@ With wksSheet
   lngCellFree = 2 + Ubound(objKeysDictionary)
   .Range("A1").Value = "Keys"
   .Range("B1").Value = "Values"
-  .Range("A2:A" & lngCellFree = wsf.Transpose(dictDictionary.keys)
-  .Range("B2:B" & lngCellFree = wsf.Transpose(dictDictionary.items)
+  .Range("A2:A" & lngCellFree) = wsf.Transpose(dictDictionary.keys)
+  .Range("B2:B" & lngCellFree) = wsf.Transpose(dictDictionary.items)
 End With
 
 End Sub

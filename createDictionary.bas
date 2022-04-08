@@ -14,7 +14,7 @@ Set wksSheet = Tabelle1
 Set wsf = Application.WorksheetFunction
 
 Set dictDictionary = CreateObject("Scripting.Dictionary")
-' Add keys and values to a dictionary.
+' Add keys and values to a dictionary. Please note that values do not allow nested data structures.
 dictDictionary.Add "key1", "value1"
 dictDictionary.Add "key2", "value2"
 

@@ -2,7 +2,7 @@ Option Explicit
 
 ' First add a few date values in tbl_Calendar.Range("A1:A" & your_last_row)  
 
-Sub AddDaysCalendar()
+Sub AddDaysCalendar() ' Find nearest monday
 
 Dim lngRow, lngRowMax As Long
 Dim dteDate, dteDateEntry As Date
@@ -84,6 +84,7 @@ End With
 
 End Sub
 
+' Additional macro to clear the testing area at tbl_Calendar.Range("B1:D" & lngRowMax)
 Sub ClearTestingArea()
 
 Dim lngRow, lngRowMax As Long
@@ -96,4 +97,3 @@ lngRowMax = .Cells(.Rows.Count, 1).End(xlUp).Row
 End With
 
 End Sub
-

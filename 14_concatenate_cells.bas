@@ -10,7 +10,7 @@ Dim varDat As Variant
 lngRowMax = Sheet1.UsedRange.Rows.Count
 
 For lngRow = 1 To lngRowMax
-  strKey = Tabelle4.Cells(lngRow, 1).Value
+  strKey = Sheet1.Cells(lngRow, 1).Value
   If lngRow < lngRowMax Then
     strKeyResult = strKeyResult + strKey + ", "
   Else
@@ -26,6 +26,6 @@ intLBound = LBound(varDat)
 intUBound = UBound(varDat)
 intCheckSum = intUBound - intLBound + 1
 
-Debug.Print intCheckSum
+Debug.Print intCheckSum ' Check for the number of concatenated cells.
 
 End Sub

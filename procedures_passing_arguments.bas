@@ -17,7 +17,7 @@ Call transfer_data(str_name, str_address, str_phone_no, _
 
 End Sub
 
-' Note keyword "optional"
+' Note keyword "optional". The optional arguments don't have to contain data.
 Sub transfer_data(name, address, Optional phone_no, _
 Optional birthdate, Optional email)
 
